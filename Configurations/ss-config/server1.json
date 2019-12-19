@@ -1,0 +1,9 @@
+{
+    "server": "hk.a.cloudss.win",   // 服务器 IP 或域名
+    "server_port": 18332,	    // 端口
+    "local_address": "127.0.0.1",   // 本地代理 IP
+    "local_port":1080,		    // 本地端口
+    "password":"~Asknorth",	    // 连接ss服务器密码
+    "timeout":600,		    // 等待超时
+    "method":"rc4-md5"		    // 加密方式
+}
