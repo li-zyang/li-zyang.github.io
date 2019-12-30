@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>生成文章id</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="mainstyle.css" />
+    <script src="globals.js" type="text/javascript"></script>
+    <script src="extrascript/toolkit.js" type="text/javascript"></script>
+    <script src="mainlib.js" type="text/javascript"></script>
+    <script src="extrascript/bloglib.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div>
+      <span>
+        <input id="id-area" type="text" size="12" readonly="readonly" />
+        <button type="button" onclick="genBlogId(function(blog_id) {document.getElementById('id-area').value = blog_id;})">
+          生成id
+        </button>
+        <button type="button" onclick="var input = document.getElementById('id-area'); input.select(); document.execCommand('copy'); alert('已复制')">
+          复制
+        </button>
+      </span>
+    </div>
+  </body>
+</html>

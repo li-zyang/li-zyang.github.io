@@ -1,0 +1,19 @@
+"id": Id of the artical
+"createdTime": Time when the artical first been submitted
+"lastModifiedTime": Time of the artical's last modification, null if haven't ever been modified
+"author": The author of the artical
+"accessAuth": Define the accessibility of the artical
+  "policy": Access policy, can be "public", "include", "exclude" or "private"
+  "encrypt": Method used in encrypting the artical, "none" if no encryption
+  "keys": A list containing keys matching the policy
+"cover": Define the cover url of the blog
+"content": Define the content url of the blog, null if no content
+
+authenticate & decoding:
+password -> encrypt -> checkin(keys)
+            |     |
+         cookies  |---> findGroups -> policy -> action 
+                             |
+                       group-password
+                             |
+                       decodeArtical
