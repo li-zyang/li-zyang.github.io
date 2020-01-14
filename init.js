@@ -4,17 +4,17 @@
 /*eslint no-undef: ["off", { "exceptions": [] }]*/
 /*eslint no-redeclare: ["off", { "exceptions": [] }]*/
 
-var navi_items = xhrGET("navi-items.html", function() {
-  if (navi_items.readyState == 4) {
+var lnavi_items = xhrGET("lnavi-items.html", function() {
+  if (lnavi_items.readyState == 4) {
     // 4 = "DONE", The operation is complete.
-    if (navi_items.status == 200) {
+    if (lnavi_items.status == 200) {
       // 200 = OK
       // if (DEBUG) console.log(xhr_in_template.responseText);
       var placeholder = document
-        .getElementsByClassName("navi")[0]
+        .getElementsByClassName("lnavi")[0]
         .getElementsByClassName("profile-and-links-container")[0]
-        .getElementsByClassName("navi-item-placeholder")[0];
-      placeholder.outerHTML = navi_items.response;
+        .getElementsByClassName("lnavi-item-placeholder")[0];
+      placeholder.outerHTML = lnavi_items.response;
     } else {
       console.error(
         "Problem retrieving XML data: got status " +
@@ -22,7 +22,7 @@ var navi_items = xhrGET("navi-items.html", function() {
       );
     }
   }
-  global_states.navi_is_folded = true;
+  global_states.lnavi_is_folded = true;
   if (window.innerWidth / window.innerHeight > SQUARE_SCREEN_THRESHOLD[1]) {
     switchNavigationPanel();
   } else if (

@@ -46,7 +46,7 @@ p {
   font-size: 16px;
   white-space: pre-wrap;
 }
-.navi {
+.lnavi {
   background-color: rgba(240, 240, 240, 0.6);
   margin: 0px;
   padding-top: 0px;
@@ -78,17 +78,17 @@ p {
     margin: -45px;
   }
 }
-.navi a {
+.lnavi a {
   text-decoration: none;
   color: #333333;
 }
-.navi-item svg {
+.lnavi-item svg {
   height: 15px;
   width: 15px;
   min-width: 15px;
   margin-right: 15px;
 }
-.navi-item span {
+.lnavi-item span {
   vertical-align: middle;
   margin-top: -3px;
   white-space: nowrap;
@@ -96,7 +96,7 @@ p {
   transform: scale(0, 1);
   opacity: 0;
 }
-.navi-item {
+.lnavi-item {
   display: flex;
   align-items: center;
   padding-left: 15px;
@@ -109,7 +109,7 @@ p {
   justify-content: flex-start;
   flex-direction: column;
 }
-.navi-func-button-container {
+.button-lnavi-func-container {
   display: -webkit-flex;
   display: flex;
   width: 100%;
@@ -120,12 +120,12 @@ p {
   justify-content: flex-end;
   -webkit-justify-content: flex-end;
 }
-.navi-func-button svg {
+.button-lnavi-func svg {
   height: 15px;
   width: 15px;
   margin-right: 15px;
 }
-.navi-func-label {
+.lnavi-func-label {
   vertical-align: middle;
   margin-top: -5px;
   white-space: nowrap;
@@ -133,7 +133,7 @@ p {
   transform: scale(0, 1);
   opacity: 0;
 }
-.navi-func-button {
+.button-lnavi-func {
   display: flex;
   display: -webkit-flex;
   align-items: center;

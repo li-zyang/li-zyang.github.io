@@ -1,0 +1,25 @@
+/* ==UserStyle==
+@name           No-Google-Ad
+@namespace      https://github.com/li-zyang
+@version        1.0.0
+@description    Hide google ads on web pages
+@author         li-zyang
+==/UserStyle== */
+
+@-moz-document regexp(".*") {
+  .adsbygoogle, 
+  *[data-ad-slot], 
+  *[data-google-query-id], 
+  *[data-google-av-adk], 
+  *[data-google-av-aid], 
+  *[data-google-av-cxn], 
+  *[data-google-av-dm], 
+  *[data-google-av-immediate],
+  *[data-google-av-itpl], 
+  *[data-google-av-metadata], 
+  *[data-google-av-naid], 
+  *[data-google-av-override],
+  *[data-google-av-rs] {
+    display: none !important;
+  }
+}

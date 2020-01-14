@@ -1,186 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>花信来时，斑斓丛生</title>
-    <link
-      rel="icon"
-      href="https://avatar.gitee.com/uploads/13/5365313_li-zhaoyang.png"
-    />
-    <link rel="stylesheet" type="text/css" href="mainstyle.css" />
-    <!-- before-body scripts -->
-    <script src="globals.js" type="text/javascript"></script>
-    <script src="extrascript/toolkit.js" type="text/javascript"></script>
-    <script src="mainlib.js" type="text/javascript"></script>
-    <script src="extrascript/bloglib.js" type="text/javascript"></script>
-  </head>
-  <body>
-    <div id="root-container">
-      <div class="navi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>花信来时，斑斓丛生</title>
+  <link rel="icon" href="https://avatar.gitee.com/uploads/13/5365313_li-zhaoyang.png" />
+  <link rel="stylesheet" type="text/css" href="mainstyle.css" />
+  <script src="libjs/anime.min.js" type="text/javascript"></script>
+  <script src="libjs/jquery.js" type="text/javascript"></script>
+  <script src="globals.js" type="text/javascript"></script>
+  <script src="extrascript/toolkit.js" type="text/javascript"></script>
+  <script src="mainlib.js" type="text/javascript"></script>
+  <script src="extrascript/bloglib.js" type="text/javascript"></script>
+  <script src="init.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <div id="root-container">
+    <div class="lnavi">
+      <div class="profile-and-links-container">
+        <div id="intro">
+          <img id="profile-photo" src="https://avatar.gitee.com/uploads/13/5365313_li-zhaoyang.png">
+          <div id="intro-text">
+            <div class="name">
+              <h1>阿昭</h1>
+              <h2>@偶尔吃点人间烟火</h2>
+            </div>
+            <p class="brief-intro">一个神经兮兮莫名其妙的学生仔</p>
+          </div>
+        </div>
+        <div class="lnavi-item-placeholder"></div>
+      </div>
+      <div class="button-lnavi-func-container">
+        <div class="button-lnavi-func" id="button-fold-lnavi" onclick="switchNavigationPanel()">
+          <span class="icon-lnavi-func">
+            <svg t="1576677540011" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="16865" width="18" height="18" transform="rotate(-90)">
+              <path d="M481.5 429.5L10.9 899.8C0.3 910.7 0.3 921.4 0.3 932c0 10.9 10.7 21.6 10.7 21.6 10.7 10.7 42.6 10.7 53.3 0L502.8 515l449 438.3c10.7 10.7 42.6 10.7 53.3 0 10.7-10.7 10.7-42.6 0-53.3L534.5 429.8c-10.7-21.3-42.6-21.3-53-0.3z m-0.3-360.1L10.7 539.9C0 550.6 0 561.5 0 572.2s10.7 21.3 10.7 21.3c10.7 10.7 42.6 10.7 53.3 0l449.3-449.3 449.5 449.3c10.7 10.7 42.6 10.7 53.3 0 10.7-10.7 10.7-42.6 0-53.3L534.8 80.3c-10.7-21.6-42.6-21.6-53.6-10.9z" p-id="16866" fill="#333333"></path>
+            </svg>
+          </span>
+          <span class="lnavi-func-label">收起</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="main">
+      <div id="top-bar">
+        <div id="top-bar-left"></div>
+        <div id="top-bar-mid">
+          <a class="top-bar-mid-ref" href="#" style="text-decoration: none; height: 100%">
+            <div class="top-bar-mid-item">关于</div>
+          </a>
+        </div>
+        <div id="top-bar-right">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="32" height="32">
+            <style>
+              tspan {
+                white-space: pre
+              }
+
+              .shp0 {
+                fill: #1e4e82
+              }
+
+              .shp1 {
+                fill: none;
+                stroke: #f0f0f0;
+                stroke-width: 7
+              }
+
+              .txt2 {
+                font-size: 96px;
+                fill: #f0f0f0;
+                font-family: "微软雅黑";
+                font-weight: 600
+              }
+            </style>
+            <path id="形状 1" class="shp0" d="M195,100c0,-52.53 -42.46,-95 -95,-95c-52.53,0 -95,42.47 -95,95c0,52.54 42.47,95 95,95c52.54,0 95,-42.46 95,-95z" />
+            <path id="形状 1" class="shp1" d="M195,100c0,-52.53 -42.46,-95 -95,-95c-52.53,0 -95,42.47 -95,95c0,52.54 42.47,95 95,95c52.54,0 95,-42.46 95,-95z" />
+            <text id="L " style="transform: matrix(1.738,0,0,1.738,49.21,161.634)">
+              <tspan x="0" y="0" class="txt2">L</tspan>
+            </text>
+          </svg>
+          <svg t="1576683922750" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="21187" width="14" height="14">
+            <path d="M919.8 381.1L555.2 779.8a57.377 57.377 0 0 1-43.1 19.5c-16.5 0-32.2-7.1-43.1-19.5L104.4 381.1c-17.8-18.8-23.3-46.2-14.1-70.4s31.4-41.1 57.2-43.4h728.9c25.9 2.2 48.2 19 57.4 43.3 9.3 24.3 3.8 51.6-14 70.5z" fill="#f0f0f0" p-id="21188"></path>
+          </svg>
+        </div>
+      </div>
+      <div id="dashboard">
+        <div id="container-e7qOuJcoJJYe" class="dashrow" style="display: none;">
+          <span class="icon-container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+              <defs>
+                <image width="396" height="397" id="img1" href="data:image/png;base64,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" />
+              </defs>
+              <style>
+                tspan {
+                  white-space: pre
+                }
+
+                .date {
+                  font-size: 160px;
+                  fill: rgba(240, 240, 240, 0.75);
+                  /*font-family: "Source Han Sans SC Regular";*/
+                  font-weight: 400
+                }
+
+                .month {
+                  font-size: 100px;
+                  fill: rgba(240, 240, 240, 0.75);
+                  /*font-family: "Source Han Sans SC Regular";*/
+                  font-weight: 400
+                }
+              </style>
+              <use id="shape 1" style="opacity: 0.502" href="#img1" x="56" y="57" />
+              <text style="transform: matrix(1,0,0,1,129.5,280)">
+                <tspan x="0" y="0" class="date">18</tspan>
+              </text>
+              <text style="transform: matrix(1,0,0,1,251,388)">
+                <tspan x="0" y="0" class="month">Dec.</tspan>
+              </text>
+            </svg>
+          </span>
+          <span class="paper">
+            <!-- insert cover here -->
+            <script>
+              insertCover("e7qOuJcoJJYe");
+            </script>
+            <span class="blog-cover"></span>
+          </span>
+          <span class="attachment-container">
+            <svg class="button-like" onclick="showInfoPanel()" style="margin-top: 0px;" t="1576650286304" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="9669" width="200" height="200">
+              <path d="M769.28 128c-96.64 0-181.12 55.04-225.28 135.68C500.48 183.04 415.36 128 318.08 128c-140.8 0-254.72 114.56-254.72 256 0 67.2 25.6 128 67.84 174.08l391.04 392.96c6.4 5.76 14.08 8.96 21.76 8.96 7.68 0 15.36-3.2 21.76-8.96L956.8 558.08C998.4 512.64 1024 451.2 1024 384c0-141.44-113.92-256-254.72-256z m138.88 388.48L544 886.4 179.84 516.48C147.2 481.92 127.36 435.2 127.36 384c0-106.24 85.76-192 190.72-192 85.12 0 158.72 56.32 184.32 133.76 6.4 16.64 23.04 28.8 41.6 28.8 19.2 0 35.2-11.52 42.24-28.16C611.2 248.32 684.16 192 769.28 192 874.88 192 960 277.76 960 384c0.64 51.2-19.2 97.92-51.84 132.48z" fill="#f0f0f0" p-id="9670"></path>
+            </svg>
+            <svg class="button-comment" onclick="showInfoPanel()" t="1576649381749" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2833" width="200" height="200">
+              <path d="M82.449655 967.856552A64.971034 64.971034 0 0 1 17.655172 903.062069V309.142069A253.351724 253.351724 0 0 1 270.653793 56.143448h482.692414A253.351724 253.351724 0 0 1 1006.344828 309.142069v288.485517a253.351724 253.351724 0 0 1-252.998621 252.998621H270.477241a104.695172 104.695172 0 0 0-74.857931 30.72l-67.266207 67.442759a64.617931 64.617931 0 0 1-45.903448 19.067586zM270.653793 126.764138A182.731034 182.731034 0 0 0 88.275862 309.142069v579.795862l57.555862-57.555862a174.433103 174.433103 0 0 1 123.586207-51.376552h483.928276A182.731034 182.731034 0 0 0 935.724138 597.627586V309.142069A182.731034 182.731034 0 0 0 753.346207 126.764138z" fill="#f0f0f0" p-id="2834"></path>
+              <path d="M759.172414 373.936552H264.827586a35.310345 35.310345 0 0 1 0-70.62069h494.344828a35.310345 35.310345 0 0 1 0 70.62069zM759.172414 621.108966H264.827586a35.310345 35.310345 0 0 1 0-70.62069h494.344828a35.310345 35.310345 0 0 1 0 70.62069z" fill="#f0f0f0" p-id="2835"></path>
+            </svg>
+            <!-- insert extra icon here -->
+            <script>
+              insertExtraButton("e7qOuJcoJJYe")
+            </script>
+            <svg class="button-extra"></svg>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="bnavi">
+      <a>
         <div class="profile-and-links-container">
           <div id="intro">
             <img id="profile-photo" src="https://avatar.gitee.com/uploads/13/5365313_li-zhaoyang.png">
             <div id="intro-text">
               <div class="name">
-                <h1>阿昭</span><h2>@偶尔吃点人间烟火</span>
+                <h1>阿昭</h1>
+                <h2>@偶尔吃点人间烟火</h1>
               </div>
               <p class="brief-intro">一个神经兮兮莫名其妙的学生仔</p>
             </div>
           </div>
-          <div class="navi-item-placeholder"></div>
+          <div class="bnavi-item-placeholder"></div>
         </div>
-        <div class="navi-func-button-container">
-          <div class="navi-func-button" id="fold-navi-button" onclick="switchNavigationPanel()">
-            <span class="navi-func-icon">
-              <svg t="1576677540011" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="16865" width="18" height="18" transform="rotate(-90)"><path d="M481.5 429.5L10.9 899.8C0.3 910.7 0.3 921.4 0.3 932c0 10.9 10.7 21.6 10.7 21.6 10.7 10.7 42.6 10.7 53.3 0L502.8 515l449 438.3c10.7 10.7 42.6 10.7 53.3 0 10.7-10.7 10.7-42.6 0-53.3L534.5 429.8c-10.7-21.3-42.6-21.3-53-0.3z m-0.3-360.1L10.7 539.9C0 550.6 0 561.5 0 572.2s10.7 21.3 10.7 21.3c10.7 10.7 42.6 10.7 53.3 0l449.3-449.3 449.5 449.3c10.7 10.7 42.6 10.7 53.3 0 10.7-10.7 10.7-42.6 0-53.3L534.8 80.3c-10.7-21.6-42.6-21.6-53.6-10.9z" p-id="16866" fill="#333333"></path></svg>
-            </span>
-            <span class="navi-func-label">收起</span>
-          </div>
+        <div class="button-bnavi-func">
+        </div>
+      </a>
+    </div>
+  </div>
+  <div id="info-panel-background" style="display: none;">
+    <div id="info-pannel">
+      <div class="title-row">
+        <div class=space-justifier style="width: 20px;"></div>
+        <h4>提示</h4>
+        <svg id="button-close" onclick="hideInfoPanel()" t="1576686241424" class="icon" viewBox="0 0 1366 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="22073" width="20" height="20">
+          <path d="M573.207 527.834l404.184-404.22a52.811 52.811 0 0 0 0-74.401l-2.217-2.217a52.836 52.836 0 0 0-74.413 0l-404.209 404.73-404.22-404.9a52.823 52.823 0 0 0-74.401 0l-2.217 2.217a51.915 51.915 0 0 0 0 74.414l404.22 404.377-404.22 404.22a52.823 52.823 0 0 0 0 74.402l2.217 2.217a52.811 52.811 0 0 0 74.401 0l404.22-404.22 404.22 404.22a52.823 52.823 0 0 0 74.414 0l2.217-2.217a52.811 52.811 0 0 0 0-74.401z m0 0" p-id="22074" fill="#333333"></path>
+        </svg>
+      </div>
+      <div class="info-row">
+        <div class="info-col">
+          <p>网站尚未建设完成，想说什么在公众号留言 8</p>
         </div>
       </div>
-      
-      <div id="main">
-        <div id="top-bar">
-          <div id="top-bar-left"></div>
-          <div id="top-bar-mid">
-            <a class="top-bar-mid-ref" href="#" style="text-decoration: none; height: 100%"><div class="top-bar-mid-item">关于</div></a>
-          </div>
-          <div id="top-bar-right">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="32" height="32">
-              <style>
-                tspan { white-space:pre }
-                .shp0 { fill: #1e4e82 } 
-                .shp1 { fill: none;stroke: #f0f0f0;stroke-width: 7 } 
-                .txt2 { font-size: 96px;fill: #f0f0f0;font-family: "微软雅黑";font-weight: 600 } 
-              </style>
-              <path id="形状 1" class="shp0" d="M195,100c0,-52.53 -42.46,-95 -95,-95c-52.53,0 -95,42.47 -95,95c0,52.54 42.47,95 95,95c52.54,0 95,-42.46 95,-95z" />
-              <path id="形状 1" class="shp1" d="M195,100c0,-52.53 -42.46,-95 -95,-95c-52.53,0 -95,42.47 -95,95c0,52.54 42.47,95 95,95c52.54,0 95,-42.46 95,-95z" />
-              <text id="L " style="transform: matrix(1.738,0,0,1.738,49.21,161.634)" >
-                <tspan x="0" y="0" class="txt2">L</tspan>
-              </text>
-            </svg>
-            <svg t="1576683922750" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="21187" width="14" height="14"><path d="M919.8 381.1L555.2 779.8a57.377 57.377 0 0 1-43.1 19.5c-16.5 0-32.2-7.1-43.1-19.5L104.4 381.1c-17.8-18.8-23.3-46.2-14.1-70.4s31.4-41.1 57.2-43.4h728.9c25.9 2.2 48.2 19 57.4 43.3 9.3 24.3 3.8 51.6-14 70.5z" fill="#f0f0f0" p-id="21188"></path>
-            </svg>
-          </div>
-        </div>
-        <div id="dashboard">
-          <div id="container-e7qOuJcoJJYe" class="dashrow" style="display: none;">
-              <span class="icon-container">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
-                  <defs>
-                    <image width="396" height="397" id="img1"
-                      href="data:image/png;base64,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" />
-                  </defs>
-                  <style>
-                    tspan {
-                      white-space: pre
-                    }
-              
-                    .date {
-                      font-size: 160px;
-                      fill: rgba(240, 240, 240, 0.75);
-                      /*font-family: "Source Han Sans SC Regular";*/
-                      font-weight: 400
-                    }
-              
-                    .month {
-                      font-size: 100px;
-                      fill: rgba(240, 240, 240, 0.75);
-                      /*font-family: "Source Han Sans SC Regular";*/
-                      font-weight: 400
-                    }
-                  </style>
-                  <use id="shape 1" style="opacity: 0.502" href="#img1" x="56" y="57" />
-                  <text style="transform: matrix(1,0,0,1,129.5,280)">
-                    <tspan x="0" y="0" class="date">18</tspan>
-                  </text>
-                  <text style="transform: matrix(1,0,0,1,251,388)">
-                    <tspan x="0" y="0" class="month">Dec.</tspan>
-                  </text>
-                </svg>
-              </span>
-              <span class="paper">
-                <!-- insert cover here -->
-                <script>insertCover("e7qOuJcoJJYe");</script>
-                <span class="blog-cover"></span>
-              </span>
-              <span class="attachment-container">
-                <svg
-                  class="like-button"
-                  onclick="showInfoPanel()"
-                  style="margin-top: 0px;"
-                  t="1576650286304"
-                  viewBox="0 0 1024 1024"
-                  version="1.1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  p-id="9669"
-                  width="200"
-                  height="200"
-                >
-                  <path
-                    d="M769.28 128c-96.64 0-181.12 55.04-225.28 135.68C500.48 183.04 415.36 128 318.08 128c-140.8 0-254.72 114.56-254.72 256 0 67.2 25.6 128 67.84 174.08l391.04 392.96c6.4 5.76 14.08 8.96 21.76 8.96 7.68 0 15.36-3.2 21.76-8.96L956.8 558.08C998.4 512.64 1024 451.2 1024 384c0-141.44-113.92-256-254.72-256z m138.88 388.48L544 886.4 179.84 516.48C147.2 481.92 127.36 435.2 127.36 384c0-106.24 85.76-192 190.72-192 85.12 0 158.72 56.32 184.32 133.76 6.4 16.64 23.04 28.8 41.6 28.8 19.2 0 35.2-11.52 42.24-28.16C611.2 248.32 684.16 192 769.28 192 874.88 192 960 277.76 960 384c0.64 51.2-19.2 97.92-51.84 132.48z"
-                    fill="#f0f0f0"
-                    p-id="9670"
-                  ></path>
-                </svg>
-                <svg
-                  class="comment-button"
-                  onclick="showInfoPanel()"
-                  t="1576649381749"
-                  viewBox="0 0 1024 1024"
-                  version="1.1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  p-id="2833"
-                  width="200"
-                  height="200"
-                >
-                  <path
-                    d="M82.449655 967.856552A64.971034 64.971034 0 0 1 17.655172 903.062069V309.142069A253.351724 253.351724 0 0 1 270.653793 56.143448h482.692414A253.351724 253.351724 0 0 1 1006.344828 309.142069v288.485517a253.351724 253.351724 0 0 1-252.998621 252.998621H270.477241a104.695172 104.695172 0 0 0-74.857931 30.72l-67.266207 67.442759a64.617931 64.617931 0 0 1-45.903448 19.067586zM270.653793 126.764138A182.731034 182.731034 0 0 0 88.275862 309.142069v579.795862l57.555862-57.555862a174.433103 174.433103 0 0 1 123.586207-51.376552h483.928276A182.731034 182.731034 0 0 0 935.724138 597.627586V309.142069A182.731034 182.731034 0 0 0 753.346207 126.764138z"
-                    fill="#f0f0f0"
-                    p-id="2834"
-                  ></path>
-                  <path
-                    d="M759.172414 373.936552H264.827586a35.310345 35.310345 0 0 1 0-70.62069h494.344828a35.310345 35.310345 0 0 1 0 70.62069zM759.172414 621.108966H264.827586a35.310345 35.310345 0 0 1 0-70.62069h494.344828a35.310345 35.310345 0 0 1 0 70.62069z"
-                    fill="#f0f0f0"
-                    p-id="2835"
-                  ></path>
-                </svg>
-                <!-- insert extra icon here -->
-                <script>insertExtraButton("e7qOuJcoJJYe")</script>
-                <svg class="extra-button"></svg>
-              </span>
-          </div>
+      <div class="info-row">
+        <div class="info-col">
+          <img src="https://li-zhaoyang.gitee.io/web-src/official-accont-qrcode.png" width="85px" height="85px" style="margin: 10px 0px 0px 0px;">
+          <p style="font-size: 14px; font-style: italic;">-- 1gram --</p>
         </div>
       </div>
     </div>
-    <div id="info-panel-background" style="display: none;">
-      <div id="info-pannel">
-        <div class="title-row">
-          <div class=space-justifier style="width: 20px;"></div>
-          <h4>提示</h4>
-          <svg id="close-button" onclick="hideInfoPanel()" t="1576686241424" class="icon" viewBox="0 0 1366 1024" version="1.1"
-            xmlns="http://www.w3.org/2000/svg" p-id="22073" width="20" height="20">
-            <path
-              d="M573.207 527.834l404.184-404.22a52.811 52.811 0 0 0 0-74.401l-2.217-2.217a52.836 52.836 0 0 0-74.413 0l-404.209 404.73-404.22-404.9a52.823 52.823 0 0 0-74.401 0l-2.217 2.217a51.915 51.915 0 0 0 0 74.414l404.22 404.377-404.22 404.22a52.823 52.823 0 0 0 0 74.402l2.217 2.217a52.811 52.811 0 0 0 74.401 0l404.22-404.22 404.22 404.22a52.823 52.823 0 0 0 74.414 0l2.217-2.217a52.811 52.811 0 0 0 0-74.401z m0 0"
-              p-id="22074" fill="#333333"></path>
-          </svg>
-        </div>
-        <div class="info-row">
-          <div class="info-col">
-            <p>网站尚未建设完成，想说什么在公众号留言 8</p>
-          </div>
-        </div>
-        <div class="info-row">
-          <div class="info-col">
-            <img src="https://li-zhaoyang.gitee.io/web-src/official-accont-qrcode.png" width="85px" height="85px" style="margin: 10px 0px 0px 0px;">
-            <p style="font-size: 14px; font-style: italic;">-- 1gram --</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- body-end scripts here -->
-    <script src="init.js" type="text/javascript"></script>
-  </body>
+  </div>
+</body>
+
 </html>
