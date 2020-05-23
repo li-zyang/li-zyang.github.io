@@ -1,0 +1,23 @@
+html, body {
+  background: #161616;
+  color: #c0c0c0;
+  font-size: 14px;
+}
+html {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  min-height: 100vh;
+}
+body {
+  margin: 0;
+  padding: 20px;
+  min-width: 100vw;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+pre {
+  font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, 
+               Bitstream Vera Sans Mono, Courier New, monospace !important;
+  margin: 0;
+}
